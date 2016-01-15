@@ -1,14 +1,73 @@
-div {
-	height: 150px;
-	width: 300px;
-	margin: 0 auto;
+.robot {
+	position: relative;
+	left: 200px;
 }
+.beep{
+  width: 5px;
+  height: 0px;
+  border: 5px solid transparent;
+  border-top: 10px solid #777;
+  border-bottom: 80px solid #888;
+  position: relative;
+  left: 140px;
+}
+.brain {
+  background: radial-gradient(circle, white 15%, transparent 40%), #cc5;
+  background: -moz-radial-gradient(circle, white 15%, transparent 40%), #cc5; 
+  background: -webkit-radial-gradient(circle, white 15%, transparent 40%), #cc5;
+  background-size: 75px 150px;
+  height: 150px;
+  width: 150px;
+  border-radius: 60px 60px 10px 10px;
+  border-bottom: 40px solid #666;
+  position: relative;
+  left: 70px;
+}
+.torso {
+  height: 0;
+  width: 140px;
+  border-top: 300px solid #bc6;
+  border-left: 75px solid transparent;
+  border-right: 75px solid transparent;
+  border-radius: 20px 20px 100px 100px;
+}
+.torso .left {
+	font-family: 'Poller One', verdana, arial, sans-serif;
+	font-weight: bold;
+	font-size: 250px;
+	color: #666;
+	text-transform: rotate(200deg);
+	-webkit-transform: rotate(200deg);
+	-moz-transform: rotate(200deg);
+	position: relative;
+    left: -190px;
+    top: -320px;
+    z-index: -1;
+}
+.torso .right {
+	font-family: 'Poller One', verdana, arial, sans-serif;
+	font-weight: bold;
+	font-size: 250px;
+	color: #666;
+	text-transform: scaleY(-1) rotate(20deg);
+	-webkit-transform: scaleY(-1) rotate(20deg);
+	-moz-transform: scaleY(-1) rotate(20deg);
+  	z-index: -1;
+  	position: relative;
+  	left: 190px;
+  	top: -620px;
+}
+
 .foot {
-	height: 40px;
-	width: 40px;
-	background: #ccc;
-	border-radius: 40px;
-  	border: 15px solid #999;
+  height: 40px;
+  width: 40px;
+  background: #ccc;
+  border-radius: 35px;
+  border: 15px solid #999;
+  position: relative;
+  left: 110px;
+  top: -10px;
+  z-index: -1;
 }
 .triangle {
 	height: 0;
@@ -17,28 +76,3 @@ div {
 	border-right: 50px solid transparent;
 	border-bottom: 100px solid red;
 }
-.torso {
-	height: 0;
-	width: 140px;
-	border-top: 300px solid #bc6;
-	border-left: 75px solid transparent;
-	border-right: 75px solid transparent;
-	border-radius: 20px 20px 100px 100px;
-}
-.brain {
-  height: 150px;
-  width: 150px;
-  background: radial-gradient(circle, white 15%, transparent 40%), #cc5;
-  background: -webkit-radial-gradient(circle, white 15%, transparent 40%), #cc5;
-  background: -moz-radial-gradient(circle, white 15%, transparent 40%), #cc5;
-  background-size: 75px 150px;
-  border-radius: 60px 60px 10px 10px;
-  border-bottom: 40px double #666
-}
-.beep {
-  width: 5px;
-  height: 0;
-  border: 5px solid transparent;
-  border-top: 10px solid #777;
-  border-bottom: 80px solid #888;
-}  
